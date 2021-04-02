@@ -8,3 +8,24 @@ Um da Ordnung zu schaffen, möchte ich einen Kalender nur für die Freizeit erst
 - Speicherung der Kästchen, um diese nochmals verwenden zu können, ohne dass jedes Mal ein neues erstellt werden muss,
 - Einfache User Experience, 
 - Mitteilungen bei einem bevorstehenden Termin
+
+
+
+
+# Neue Projektidee
+
+## Meine neue Projektidee sollte eine App sein, die einen Überblick über den privaten Weinkeller verschafft. Meine ganze Familie ist sind Weinliebhaber, da sammeln sich gerne auch einige Flaschen. im Keller an. 
+
+Ich möchte ein App für den Weinkeller für den Haushalt erstellen. Die Daten sollten einfach zu erfassen sein und eine übersichtliche Oberfläche zeigen. Die Funktionen sollten beinhalten:
+
+Dateneingabe:
+-	Formular zum Ausfüllen mit Daten des Weines. Name, Geschmack etc.
+-	Persönliche Bewertung abgeben.
+
+Weinkeller filtern und suchen:
+-	Gesuchter Wein gibt an, zu welchem Gericht dieser passt.
+-	Gekochtes Essen kann eingegeben werden und der passende Wein wird angezeigt. 
+
+Nachrichten:
+-	Der Wein hat sein perfektes Datum, um getrunken zu werden, erreicht. 
+-	Timer um zu sehen, wie lange der Wein offen stehen oder gekühlt werden muss.
