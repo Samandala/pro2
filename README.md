@@ -29,3 +29,26 @@ Weinkeller filtern und suchen:
 Nachrichten:
 -	Der Wein hat sein perfektes Datum, um getrunken zu werden, erreicht. 
 -	Timer um zu sehen, wie lange der Wein offen stehen oder gekühlt werden muss.
+
+
+
+# Projektidee Verbessert
+
+Dateneingabe:
+-	Formular zum Ausfüllen mit Daten des Weines. Name, Geschmack etc.
+-	Persönliche Bewertung abgeben.
+
+Weinkeller filtern, suchen, sortieren:
+-	Gesuchter Wein gibt an, zu welchem Gericht dieser passt.
+-	Gekochtes Essen kann eingegeben werden und der passende Wein wird angezeigt.
+-   Es kann nach Datum sortiert werden. Welcher Wein ist schon älter und muss zuerst getrunken werden.
+-   Preis kann sortiert werden.
+-   Nach Kategorien suchen wie z.B Anlassweine, Alltagsweine, (Bewertung) Sternen
+
+Nachrichten:
+-	Der Wein hat sein perfektes Datum, um getrunken zu werden, erreicht. 
+-	Es wird eine Pushnachricht mit dem Hinweis gesendet, wie lange dieser Wein gekühlt oder offen stehen muss.
+
+Extras:
+-   Einkaufliste erstellen. Falls nur noch wenige Weine vorhanden sind wird es eine Mitteilung geben.
+
