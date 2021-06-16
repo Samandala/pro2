@@ -33,22 +33,28 @@ Nachrichten:
 
 
 # Projektidee Verbessert
+Meine neue Projektidee sollte eine App sein, die einen Überblick über den privaten Weinkeller verschafft. Meine ganze Familie sind Weinliebhaber, da sammeln sich gerne auch einige Flaschen im Keller an. 
 
-Dateneingabe:
--	Formular zum Ausfüllen mit Daten des Weines. Name, Geschmack etc.
--	Persönliche Bewertung abgeben.
+#Ausgangslage
+Im Modul Programmieren 2 sollte dieses Semester eine Webapplikatin mit Pyhton erstellt werden, die es ermöglicht, Daten einzugeben, zu speicher und auszugeben. Ebenfalls werden auch die Module wie Jinja, Flask und Plotly benutzt.
+Die Webapplikaiton ist funktional und einfach aufgebaut und ermöglicht durch klicken der Buttons und Links auf die verschiedenen Seiten zu gelangen.
 
-Weinkeller filtern, suchen, sortieren:
--	Gesuchter Wein gibt an, zu welchem Gericht dieser passt.
--	Gekochtes Essen kann eingegeben werden und der passende Wein wird angezeigt.
+#Workflow und Funktionen
+Dateneingabe des Users:
+-	Formular zum Ausfüllen mit Daten des Weines: Name, Geschmack, Preis, Herkunft, Jahrgang, Sorte, Bild zum Uploaden
+-	Persönliche Bewertung im Nachhinein abgeben
+
+Datenverarbeitung, Speicherung
+-	In der Detailansicht zeigt der gesuchte Wein zu welchem Gericht dieser passt.
+-	Gekochtes Essen kann eingegeben werden und die passenden Weine werden angezeigt.
 -   Es kann nach Datum sortiert werden. Welcher Wein ist schon älter und muss zuerst getrunken werden.
 -   Preis kann sortiert werden.
--   Nach Kategorien suchen wie z.B Anlassweine, Alltagsweine, (Bewertung) Sternen
+-   Nach Kategorien suchen wie z.B Anlassweine, Alltagsweine, Bewertung
 
-Nachrichten:
--	Der Wein hat sein perfektes Datum, um getrunken zu werden, erreicht. 
+Datenausgabe:
+-	Eine Pushnachricht wird gesendet, wenn der Wein sein perfektes Datum, um getrunken zu werden, erreicht hat. 
 -	Es wird eine Pushnachricht mit dem Hinweis gesendet, wie lange dieser Wein gekühlt oder offen stehen muss.
 
-Extras:
+Erweiterbarkeit:
 -   Einkaufliste erstellen. Falls nur noch wenige Weine vorhanden sind wird es eine Mitteilung geben.
 

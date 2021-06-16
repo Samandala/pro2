@@ -1,13 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Wein erfassen</title>
-</head>
+{% include "header.html" %}
+
 <body>
-        <h1>Wein erfassen Formularseite</h1>
-		<a href="{{ url_for('startseite')}}"><button>Zurück</button></a>
+        <div class="album py-5 bg-light">
+         <div class="container">
+
+	<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Wein erfassen Formularseite</h1>
+    <div class="col-lg-6 mx-auto">
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+    </div>
+  </div>
+                     <div class="album py-5 bg-light">
+         <div class="container">
+
+    <form method="post">
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" id="Name" name="Name">
+        </div>
+            </div>
+                                 <div class="album py-5 bg-light">
+         <div class="container">
+
+                <select class="form-select" aria-label="Default select example">
+                 <option selected>Sorte</option>
+                    <option value="1">Weisswein</option>
+                    <option value="2">Rotwein</option>
+                    <option value="3">Rosé</option>
+                </select>
+            </div>
+        </div>
+
+                <div class="form-group">
+                    <label for="Geschmack">Geschmack</label>
+                    <input type="text" class="form-control" id="Geschmack" name="Geschmack">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label for="Herkunft">Herkunft</label>
+                    <input type="text" class="form-control" id="Herkunft" name="Herkunft">
+                </div>
+            </div>
+        </div>
+                    <div class="album py-5 bg-light">
+         <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="Jahrgang">Jahrgang</label>
+                    <input type="text" class="form-control" id="Jahrgang" name="Jahrgang">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label for="Preis">Preis</label>
+                    <input type="text" class="form-control" id="Preis" name="Preis">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Default file input example</label>
+                 <input class="form-control" type="file" id="formFile">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Erfassen</button>
+    </form>
 
 
 </body>
+
+{% include "footer.html" %}
+
 </html>
