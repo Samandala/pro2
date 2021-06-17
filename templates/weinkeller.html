@@ -1,0 +1,70 @@
+{% include "header.html" %}
+
+
+    <body>
+            <div class="album py-5 bg-light">
+         <div class="container">
+
+	<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Übersicht über meinen Weinkeller</h1>
+    <div class="col-lg-6 mx-auto">
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+    </div>
+  </div>
+		<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+  <option selected>Filtern nach</option>
+  <option value="1">Preis</option>
+  <option value="2">Bewertung</option>
+  <option value="3">Herkunft</option>
+            <option value="3">Sorte</option>
+            <option value="3">Jahrgang</option>
+</select>
+
+                        <div class="album py-5 bg-light">
+                        <div class="container">
+
+
+             {% for key, value in data.items() %}
+
+
+<div class="card mb-3" style="max-width: 800px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ value.name }}</h5>
+        <p class="card-text">
+            Weintyp: {{ value.typ }}<br>
+             Jahrgang: {{ value.jahrgang }}<br>
+            Preis: {{ value.preis }}<br><br>
+            Deine persönliche Bewertung: {{ value.bewertung }}<br><br>
+        </p>
+
+
+          <form method="POST"> <!-- POST Methode für Keyübergabe an FLask, damit die korrekte Bestellung ausgelesen werden kann -->
+                        <div class="col-12">
+                            <!-- Button um die Einkaufsliste erstellen zu können -->
+                            <button
+                                    class="btn btn-primary"
+                                    type="submit"
+                                    id="{{ key }}"
+                                    name="wein_id"
+                                    value="{{ key }}"
+                            >Details</button>
+                        </div>
+                    </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+              {% endfor %}
+
+
+	</body>
+{% include "footer.html" %}
+
+</html>

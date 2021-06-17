@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <!-- Filter List Link: https://www.w3schools.com/bootstrap/bootstrap_filters.asp -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js%22%3E"></script>
+</head>
+
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+          <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="{{ url_for('erfassen')}}" class="nav-link">Wein erfassen</a></li>
+          <li class="nav-item"><a href="{{ url_for('weinkeller')}}" class="nav-link">Mein Weinkeller</a></li>
+      </ul>
+    </header>
+
