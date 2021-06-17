@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, url_for, redirect, request
 from flask import render_template
 
 import daten
@@ -6,49 +6,57 @@ import daten
 app = Flask("Hello World")
 
 
-@app.route('/') # Seitenverlinkung Startseite
+@app.route('/')  # Seitenverlinkung Startseite
 def startseite():
     return render_template('index.html')
 
 
-@app.route('/erfassen') # Seitenverlinkung Erfassen
-def erfassen():
-    return render_template('erfassen.html')
+@app.route('/weinkeller', methods=["GET", "POST"])# Detailseite Wein
+def weinkeller():  # gibt id mit
 
+    if request.method == "POST":
+        weine = daten.weine_laden()
+        wein_id = request.form["wein_id"]
+        print(wein_id)
+        wein_detail = weine[wein_id]
+        wein_jahrgang = weine[wein_id]["jahrgang"]
+        wein_typ = weine[wein_id]["typ"]
+        wein_herkunft = weine[wein_id]["herkunft"]
+        wein_geschmack = weine[wein_id]["geschmack"]
+        wein_bewertung = weine[wein_id]["bewertung"]
+        wein_preis = weine[wein_id]["preis"]
+        wein_name = weine[wein_id]["name"]
 
-@app.route('/weinkeller') # Seitenverlinkung Weinkeller
-def weinkeller():
+        return render_template('detail_wein.html',
+                               wein_detail=wein_detail,
+                               wein_jahrgang=wein_jahrgang,
+                               wein_typ=wein_typ,
+                               wein_herkunft=wein_herkunft,
+                               wein_geschmack=wein_geschmack,
+                               wein_bewertung=wein_bewertung,
+                               wein_preis=wein_preis,
+                               wein_name=wein_name
+                               )
+
     weine = daten.weine_laden()
-    return render_template('weinkeller.html', weine=weine)
+    return render_template('weinkeller.html', data=weine)
 
 
-@app.route("/speichern/<aktivitaet>") # Daten speichern
-def speichern(aktivitaet):
-    zeitpunkt, aktivitaet = daten.aktivitaet_speichern(aktivitaet)
-
-    return "Gespeichert: " + aktivitaet + " um " + str(zeitpunkt)
-
-
-@app.route("/liste")
-def auflisten():
-    aktivitaeten = daten.aktivitaeten_laden()
-
-    aktivitaeten_liste = ""
-    for key, value in aktivitaeten.items():
-        zeile = str(key) + ": " + value + "<br>"
-        aktivitaeten_liste += zeile
-
-    return aktivitaeten_liste
-
-"""
-@app.route('/weine/erfassen', methods=['GET', 'POST'])
+@app.route('/erfassen', methods=['GET', 'POST'])
 def erfassen():
     if request.method == 'POST':
-        wine_create_data = request.form.to_dict()
-        mv.save_wine(movie_create_data)
-        return redirect(url_for('movies'))
-    return render_template('movie_create.html')
-"""
+        name = request.form["name"]
+        typ = request.form["typ"]
+        geschmack = request.form["geschmack"]
+        herkunft = request.form["herkunft"]
+        jahrgang = request.form["jahrgang"]
+        preis = request.form["preis"]
+        bewertung = request.form["bewertung"]
+
+        daten.speichern(name, typ, geschmack, herkunft, jahrgang, preis, bewertung)
+
+        return redirect(url_for('weinkeller'))
+    return render_template('erfassen.html')
 
 
 

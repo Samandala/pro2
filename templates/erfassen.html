@@ -14,34 +14,34 @@
                      <div class="album py-5 bg-light">
          <div class="container">
 
-    <form method="post">
+    <form method="POST">
         <div class="form-group">
             <label for="Name">Name</label>
-            <input type="text" class="form-control" id="Name" name="Name">
+            <input type="text" class="form-control" id="Name" name="name">
         </div>
             </div>
                                  <div class="album py-5 bg-light">
          <div class="container">
 
-                <select class="form-select" aria-label="Default select example">
-                 <option selected>Sorte</option>
-                    <option value="1">Weisswein</option>
-                    <option value="2">Rotwein</option>
-                    <option value="3">Rosé</option>
+                <select class="form-select" aria-label="Default select example" id="Typ" name="typ">
+                 <option selected>Typ</option>
+                    <option value="Weisswein">Weisswein</option>
+                    <option value="Rotwein">Rotwein</option>
+                    <option value="Rosé">Rosé</option>
                 </select>
             </div>
         </div>
 
                 <div class="form-group">
                     <label for="Geschmack">Geschmack</label>
-                    <input type="text" class="form-control" id="Geschmack" name="Geschmack">
+                    <input type="text" class="form-control" id="Geschmack" name="geschmack">
                 </div>
             </div>
 
             <div class="col">
                 <div class="form-group">
                     <label for="Herkunft">Herkunft</label>
-                    <input type="text" class="form-control" id="Herkunft" name="Herkunft">
+                    <input type="text" class="form-control" id="Herkunft" name="herkunft">
                 </div>
             </div>
         </div>
@@ -52,20 +52,24 @@
             <div class="col">
                 <div class="form-group">
                     <label for="Jahrgang">Jahrgang</label>
-                    <input type="text" class="form-control" id="Jahrgang" name="Jahrgang">
+                    <input type="text" class="form-control" id="Jahrgang" name="jahrgang">
                 </div>
             </div>
 
             <div class="col">
                 <div class="form-group">
                     <label for="Preis">Preis</label>
-                    <input type="text" class="form-control" id="Preis" name="Preis">
+                    <input type="text" class="form-control" id="Preis" name="preis"><br>
                 </div>
             </div>
-            <div class="mb-3">
-                <label for="formFile" class="form-label">Default file input example</label>
-                 <input class="form-control" type="file" id="formFile">
+
+            <div class="col">
+                <div class="form-group">
+                    <label for="Bewertung">Bewertung von 1 bis 10</label>
+                    <input type="text" class="form-control" id="Bewertung" name="bewertung"><br>
+                </div>
             </div>
+
         </div>
         <button type="submit" class="btn btn-primary">Erfassen</button>
     </form>

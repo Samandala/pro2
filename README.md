@@ -41,20 +41,19 @@ Die Webapplikaiton ist funktional und einfach aufgebaut und ermöglicht durch kl
 
 #Workflow und Funktionen
 Dateneingabe des Users:
--	Formular zum Ausfüllen mit Daten des Weines: Name, Geschmack, Preis, Herkunft, Jahrgang, Sorte, Bild zum Uploaden
--	Persönliche Bewertung im Nachhinein abgeben
+-	Formular zum Ausfüllen mit Daten des Weines: Name, Geschmack, Preis, Herkunft, Jahrgang, Sorte, Persönliche Bewertung
 
 Datenverarbeitung, Speicherung
--	In der Detailansicht zeigt der gesuchte Wein zu welchem Gericht dieser passt.
--	Gekochtes Essen kann eingegeben werden und die passenden Weine werden angezeigt.
 -   Es kann nach Datum sortiert werden. Welcher Wein ist schon älter und muss zuerst getrunken werden.
 -   Preis kann sortiert werden.
--   Nach Kategorien suchen wie z.B Anlassweine, Alltagsweine, Bewertung
 
 Datenausgabe:
--	Eine Pushnachricht wird gesendet, wenn der Wein sein perfektes Datum, um getrunken zu werden, erreicht hat. 
--	Es wird eine Pushnachricht mit dem Hinweis gesendet, wie lange dieser Wein gekühlt oder offen stehen muss.
+-   Die eingegebenen Weine werden in einer Übersicht angezeigt. 
+-   Die Detailseiten der Weine gibt die eingegebenen Daten des Weines aus.
 
 Erweiterbarkeit:
--   Einkaufliste erstellen. Falls nur noch wenige Weine vorhanden sind wird es eine Mitteilung geben.
-
+-   Einkaufliste erstellen. Falls nur noch wenige Weine vorhanden sind, wird es eine Mitteilung geben. 
+-   Eine Pushnachricht wird gesendet, wenn der Wein sein perfektes Datum, um getrunken zu werden, erreicht hat. 
+-	Es wird eine Pushnachricht mit dem Hinweis gesendet, wie lange dieser Wein gekühlt oder offen stehen muss.
+-	In der Detailansicht zeigt der gesuchte Wein zu welchem Gericht dieser passt.
+-	Gekochtes Essen kann eingegeben werden und die passenden Weine werden angezeigt.
