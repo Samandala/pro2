@@ -1,18 +1,17 @@
 {% include "header.html" %}
 
-
-    <body>
+<body>
             <div class="album py-5 bg-light">
          <div class="container">
 
-	<div class="px-4 py-5 my-5 text-center">
+    <div class="px-4 py-5 my-5 text-center">
     <h1 class="display-5 fw-bold">Übersicht über meinen Weinkeller</h1>
     <div class="col-lg-6 mx-auto">
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
       </div>
     </div>
   </div>
-		<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
   <option selected>Filtern nach</option>
   <option value="1">Preis</option>
   <option value="2">Bewertung</option>
@@ -23,9 +22,7 @@
 
                         <div class="album py-5 bg-light">
                         <div class="container">
-
-
-             {% for key, value in data.items() %}
+{% for key, value in data.items() %}
 
 
 <div class="card mb-3" style="max-width: 800px;">
@@ -38,8 +35,8 @@
         <p class="card-text">
             Weintyp: {{ value.typ }}<br>
              Jahrgang: {{ value.jahrgang }}<br>
-            Preis: {{ value.preis }}<br><br>
-            Deine persönliche Bewertung: {{ value.bewertung }}<br><br>
+            Preis: {{ value.preis }} CHF<br><br>
+            Deine persönliche Bewertung: {{ value.bewertung }}/10<br><br>
         </p>
 
 
@@ -64,7 +61,6 @@
               {% endfor %}
 
 
-	</body>
-{% include "footer.html" %}
+</body>
 
-</html>
+{% include "footer.html" %}

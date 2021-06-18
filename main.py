@@ -3,13 +3,15 @@ from flask import render_template
 
 import daten
 
-app = Flask("Hello World")
+app = Flask("Weinkeller")
 
 
+#die Startseite wird hier direkt aufgerufen, da die url route "/" ist.
 @app.route('/')  # Seitenverlinkung Startseite
 def startseite():
-    return render_template('index.html')
+    return render_template('index.html') #die Startseite als index.html wird gerendert.
 
+#die url ruft die Seite weinkeller.html auf.
 
 @app.route('/weinkeller', methods=["GET", "POST"])# Detailseite Wein
 def weinkeller():  # gibt id mit
@@ -41,7 +43,9 @@ def weinkeller():  # gibt id mit
     weine = daten.weine_laden()
     return render_template('weinkeller.html', data=weine)
 
-
+#auf der Seite erfassen werden die Daten der Weine anhand des Formulars erfasst.
+#nachdem das Formular geschickt wurde wird die Seite Weinkeller aufgerufen.
+#Variablen werden zusammengenommen und beim rendern dann ausgegeben.
 @app.route('/erfassen', methods=['GET', 'POST'])
 def erfassen():
     if request.method == 'POST':
@@ -62,3 +66,7 @@ def erfassen():
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
+
+
+#Quelle:
+# https://www.w3schools.com/python/python_json.asp

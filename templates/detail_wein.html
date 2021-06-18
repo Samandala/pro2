@@ -20,8 +20,8 @@
         <h1 class="display-4 fw-bold lh-1">{{ wein_name }}</h1><br>
 
         <p class="lead">
-            Preis: {{ wein_preis }}<br><br>
-          Deine persönliche Bewertung: {{ wein_bewertung }}<br><br>
+            Preis: {{ wein_preis }} CHF<br><br>
+          Deine persönliche Bewertung: {{ wein_bewertung }}/10<br><br>
 
           <h2 class="text-muted">Technische Angaben</h2>
           Weintyp: {{ wein_typ }}<br>
@@ -41,3 +41,5 @@
       <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
       </div>
     </div>
+
+{% include "footer.html" %} <!-- Mit Jinja2 wird footer.html eingebunden -->

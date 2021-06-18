@@ -51,7 +51,7 @@ Datenausgabe:
 -   Die eingegebenen Weine werden in einer Übersicht angezeigt. 
 -   Die Detailseiten der Weine gibt die eingegebenen Daten des Weines aus.
 
-Erweiterbarkeit:
+Mögliche Erweiterbarkeiten:
 -   Einkaufliste erstellen. Falls nur noch wenige Weine vorhanden sind, wird es eine Mitteilung geben. 
 -   Eine Pushnachricht wird gesendet, wenn der Wein sein perfektes Datum, um getrunken zu werden, erreicht hat. 
 -	Es wird eine Pushnachricht mit dem Hinweis gesendet, wie lange dieser Wein gekühlt oder offen stehen muss.
