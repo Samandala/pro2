@@ -36,11 +36,11 @@ Nachrichten:
 Meine Projektidee ist eine App, die einen Überblick über den privaten Weinkeller verschafft. Meine ganze Familie sind Weinliebhaber, da sammeln sich gerne auch einige Flaschen im Keller an. 
 Mithlfe des Apps können die geschenkten oder gekauften Weine einfach erfasst werden und gibt so einen Überblick über seine Eigene Weinsammlung.
 
-#Ausgangslage
+# Ausgangslage
 Im Modul Programmieren 2 sollte dieses Semester eine Webapplikation mit Pyhton erstellt werden, die es ermöglicht, Daten einzugeben, zu speicher und auszugeben. Ebenfalls werden auch die Module wie Jinja, Flask und Plotly benutzt.
 Die Webapplikaiton ist funktional und einfach aufgebaut und ermöglicht durch klicken der Buttons und Links auf die verschiedenen Seiten zu gelangen.
 
-#Workflow
+# Workflow
 Beim Aufrufen der URL wird zuerst meine Startseite angezeigt. Dort kann zwischen "Wein erfassen" und "mein Weinkeller" ausgewählt werden.
 Möchte man einen neuen Wein erfassen, kann man auf den Button klicken oder aber auch den Link in der Navigation benutzen.
 Auf der Seite "erfassen" kann mit dem Abschicken des Formular die Daten des Weines erfasst werden. Sobald das Formular geschickt wird, gelangt man automatisch auf die Übersichtsseite der Weine.
@@ -49,7 +49,7 @@ Die Detailseite erhält noch zusätzliche Informationen über den Wein.
 
 <img src="Flowchart.png">
 
-#Funktionen
+# Funktionen
 Dateneingabe des Users:
 -	Formular zum Ausfüllen mit Daten des Weines: Name, Geschmack, Preis, Herkunft, Jahrgang, Sorte, Persönliche Bewertung
 
@@ -60,7 +60,7 @@ Datenausgabe:
 -   Die eingegebenen Weine werden in einer Übersichtseite angezeigt. 
 -   Die Detailseiten der Weine gibt die eingegebenen Daten des Weines aus.
 
-Mögliche Erweiterbarkeiten:
+# Mögliche Erweiterbarkeiten:
 
 Da das Projekt noch weiter ausgebaut werden kann, sind hier noch einige Ideen aufgeschrieben, die mit mehr Wissen und Zeit ebenfalls noch eingebaut werden könnten.
 -   Einkaufliste erstellen. Falls nur noch wenige Weine vorhanden sind, wird es eine Mitteilung geben.
