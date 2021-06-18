@@ -11,7 +11,7 @@ def weine_laden():
 
 #Daten im weine.json File speichern
 def speichern(name, typ, geschmack, herkunft, jahrgang, preis, bewertung):
-    weine = weine_laden() #die Weine werden aus der def weine_laden geladen.
+    weine = weine_laden() #die Weine werden aus der funktion weine_laden geladen.
 
     eintrag_weine = {
             "name": name,

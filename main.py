@@ -1,4 +1,4 @@
-from flask import Flask, url_for, redirect, request
+from flask import Flask, url_for, redirect, request #diese Module werden hier importiert
 from flask import render_template
 
 import daten

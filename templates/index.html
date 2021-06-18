@@ -1,4 +1,4 @@
-{% include "header.html" %}
+{% include "header.html" %} <!-- Mit Jinja2 wird header.html eingebunden -->
 
 <body>
 
@@ -7,14 +7,14 @@
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">Was möchtest du machen?</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <a href="{{ url_for('erfassen')}}"><button type="button" class="btn btn-outline-primary">Wein erfassen</button></a>
-        <a href="{{ url_for('weinkeller')}}"><button type="button" class="btn btn-outline-primary">Zum Weinkeller</button></a>
+        <a href="{{ url_for('erfassen')}}"><button type="button" class="btn btn-outline-primary">Wein erfassen</button></a> <!-- Button mit Verlinkung zur Seite erfassen-->
+        <a href="{{ url_for('weinkeller')}}"><button type="button" class="btn btn-outline-primary">Zum Weinkeller</button></a> <!-- Button mit Verlinkung zur Seite weinkeller-->
       </div>
     </div>
   </div>
 
 </body>
 
-{% include "footer.html" %}
+{% include "footer.html" %} <!-- Mit Jinja2 wird header.html eingebunden -->
 
 </html>
