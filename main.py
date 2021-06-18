@@ -11,8 +11,8 @@ app = Flask("Weinkeller")
 def startseite():
     return render_template('index.html') #die Startseite als index.html wird gerendert.
 
-#die url ruft die Seite weinkeller.html auf.
 
+#die url ruft die Seite weinkeller.html auf.
 @app.route('/weinkeller', methods=["GET", "POST"])# Detailseite Wein
 def weinkeller():  # gibt id mit
 
@@ -57,7 +57,7 @@ def erfassen():
         preis = request.form["preis"]
         bewertung = request.form["bewertung"]
 
-        daten.speichern(name, typ, geschmack, herkunft, jahrgang, preis, bewertung)
+        daten.speichern(name, typ, geschmack, herkunft, jahrgang, preis, bewertung) #keys mitgeben, damit die funktion weiss von wo er die Daten nehmen muss.
 
         return redirect(url_for('weinkeller'))
     return render_template('erfassen.html')
